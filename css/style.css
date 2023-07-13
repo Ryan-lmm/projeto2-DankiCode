@@ -2,6 +2,11 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+
+html, body{
+	height:100%;
 }
 
 .container{
@@ -15,8 +20,8 @@
 }
 
 header{
-	padding: 10px 2% 30px 3%;
-	background-color: #ccc;
+	padding: 10px 2% 40px 3%;
+	background-color: #adadad;
 }
 
 .logo{
@@ -32,7 +37,6 @@ header{
 
 section.banner{
 	width:100%;
-	padding: 0 2%;
 }
 
 .bg{
@@ -43,19 +47,22 @@ section.banner{
 }
 
 .container-form{
-	background-color: rgba(255, 255, 255, 0.358);
+	background-color: rgb(255, 255, 255);
 	width:350px;
 	height:83%;
 	position:absolute;
-	left:850px;
-	top:110px;
+	left:68%;
+	top:13%;
+	z-index: 2;
+	box-shadow:0px 2px 12px 1px rgba(0, 0, 0, 0.389);
+
 }
 
 .container-form h2{
 	padding:30px 15px;
 	font-weight:normal;
 	font-size:18px;
-	background-color: #e4d8d8;
+	background-color: #c9c9c9;
 }
 
 .container-form form{
@@ -78,7 +85,7 @@ section.banner{
 }
 
 .form-wraper:not(first-child){
-	margin-top:20px;
+	margin-top:30px;
 }
 
 .container-form form input[type=submit]{
@@ -93,13 +100,117 @@ section.banner{
 	cursor:pointer;
 }
 
-@media screen and (max-width:510px){
+section.chamada{
+	width:94.9%;
+	text-align: center;
+	padding:60px 0;
+	background-color: rgb(9, 84, 110);
+	transform: translate(2.73%);
+}
+
+section.chamada h2{
+	display: inline-block;
+	color:white;
+	font-size: 30px;
+	font-weight:normal;
+
+}
+
+.box-mosaico{
+	display: flex;
+	margin-top: 2px;
+}
+
+.item-1{
+	background-position: center;
+	background-size: cover;
+	width:60%;
+}
+
+.item-2{
+	width:40%;
+	padding:40px;
+	background-color: rgb(90, 139, 155);
+	color:white;
+}
+
+footer{
+	background-color: rgb(190, 188, 188);
+	text-align: center;
+	padding: 20px;
+}
+
+footer img{
+	margin-bottom: 10px;
+}
+footer p{
+	margin-top: 5px;
+}
+
+@media screen and (max-width:1200px){
 	header{
 		display:block;
 		max-height:100%;
 	}
 	.logo img{
 		margin: 12px auto;
+	}
+	.container-form{
+		position: absolute;
+		left:30%;
+		top:20%;
+		height:auto;
+		width:38%;
+	}
+	section.chamada{
+		width:100%;
+		transform:translate(0%)
+	}
+}
+
+@media screen and (max-width:788px), screen and(max-width:568px){
+	.container-form{
+		width:40%;
+		position: absolute;
+		left:30%;
+		top:20%;
+	}
+
+	.box-mosaico{
+		display: block;
+	}
+
+	.item-1{
+		height:60%;
+		width:100%;
+	}
+
+	.item-2{
+		height:auto;
+		width:100%;
+	}
+	
+	.item-2 p{
+		padding:0px;
+	}
+	
+}
+
+@media screen and (max-width:560px){
+	.container-form{
+		width:55%;
+		position: absolute;
+		left:25%;
+		top:20%;
+	}
+}
+
+@media screen and (max-width:463px){
+	.container-form{
+		width:80%;
+		position: absolute;
+		left:10%;
+		top:31%;
 	}
 
 }
