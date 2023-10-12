@@ -49,10 +49,10 @@ section.banner{
 .container-form{
 	background-color: rgb(255, 255, 255);
 	width:350px;
-	height:83%;
+	height:87%;
 	position:absolute;
 	left:68%;
-	top:13%;
+	top:17%;
 	z-index: 2;
 	box-shadow:0px 2px 12px 1px rgba(0, 0, 0, 0.389);
 
